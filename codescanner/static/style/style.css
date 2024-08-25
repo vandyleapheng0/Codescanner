@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0.25em;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+li {
+    margin-left: 1em;
+}
+
+#video,
+#image {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 1rem;
+}

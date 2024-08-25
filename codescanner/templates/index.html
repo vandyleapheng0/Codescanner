@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Codescanner</h1>
+<div class="input">
+    <input type="file" id="input">
+    <div>
+        <select name="cameras" id="camera-select">
+            <option value="">--Please choose an option--</option>
+        </select>
+        <button class="" onclick="startCamera();">start</button>
+        <button class="" onclick="stopCamera();">stop</button>
+        <button class="" onclick="clearList();">clear</button>
+    </div>
+</div>
+<div>
+    <ol id="founded-list"></ol>
+</div>
+<div class="container" id="content">
+    <video id="video" autoplay muted playsinline></video>
+    <img id="image">
+</div>
+<script src="{{ url_for('static', filename='node_modules/@zxing/library/umd/index.js') }}"></script>
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+{% endblock %}

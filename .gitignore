@@ -1,0 +1,12 @@
+
+__pycache__/
+reloadserver/
+.venv/
+node_modules/
+cert/
+
+pyproject.toml
+video.mov
+barcode_book.jpg
+opencv.js
+config.py
